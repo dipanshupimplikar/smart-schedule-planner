@@ -3,6 +3,7 @@ plugins {
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.kapt)
     alias(libs.plugins.ksp)
+    alias(libs.plugins.hilt.android)
 }
 
 android {
@@ -32,6 +33,10 @@ android {
     kotlinOptions {
         jvmTarget = "11"
     }
+}
+
+hilt {
+    enableAggregatingTask = false
 }
 
 dependencies {

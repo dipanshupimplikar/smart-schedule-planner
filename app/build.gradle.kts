@@ -41,6 +41,10 @@ android {
     }
 }
 
+hilt {
+    enableAggregatingTask = false
+}
+
 dependencies {
     implementation(project(":domain"))
     implementation(project(":data"))
